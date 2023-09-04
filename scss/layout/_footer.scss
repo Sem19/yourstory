@@ -1,0 +1,133 @@
+.footer {
+    background: #08172D;
+
+    &-top {
+        padding: 120px 0 96px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 87px;
+        border-bottom: 1px solid #E9EBED16;
+        
+
+        @media (max-width: 1230px) {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+    }
+
+    &-content {
+        width: 363px;
+
+    }
+
+    &-logo {
+        display: block;
+        width: 123px;
+        margin-bottom: 16px;
+    }
+
+    &-text {
+        @include GeneralSans-Regular(16px, 24px, 400);
+        color: #AEAEB2;
+    }
+
+    &-list {
+        width: 296px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 32px;
+    }
+
+    &-link {
+        line-height: 24px;
+        color: #C5C5C5;
+    }
+
+    &-form {
+        max-width: 366px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @media (max-width: 450px) {
+            margin: 0 auto;
+        }
+    }
+
+    .form-title {
+        font-size: 16px;
+        line-height: 24px;
+        color: #8E8E93;
+        margin: 0;
+        text-align: left;
+    }
+
+    .form-block {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        @media (max-width: 450px) {
+            flex-direction: column;
+            
+            input, button{
+                width: 100%;
+            }
+        }
+    }
+
+    .form-input {
+        width: 247px;
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 32px;
+        padding: 16px 32px;
+        border: none;
+        outline: none;
+        color: #CBCBCB;
+        font: inherit;
+        @include GeneralSans-Regular(16px, 24px, 400);
+    }
+
+    .form-btn {
+        width: 103px;
+        background: #BCFF5E;
+        border-radius: 32px;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 16px 0;
+        margin: 0;
+    }
+
+    &-bottom {
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+            gap: 30px;
+        }
+    }
+
+    .copyright {
+        color: #AEAEB2;
+        @include GeneralSans-Regular(16px, 24px, 400);
+    }
+
+    &-social {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &-menu {
+        display: flex;
+        gap: 40px;
+        color: #C5C5C5;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

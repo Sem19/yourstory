@@ -1,0 +1,40 @@
+@mixin GeneralSans-Regular($fz, $lh, $fw){
+    font-family: 'GeneralSans-Regular';
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
+@mixin GeneralSans-Medium($fz, $lh, $fw){
+    font-family: 'GeneralSans-Medium';
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
+@mixin GeneralSans-Semibold($fz, $lh, $fw){
+    font-family: 'GeneralSans-Semibold';
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
+@mixin GeneralSans-Bold($fz, $lh, $fw){
+    font-family: 'GeneralSans-Bold';
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
+@mixin Inter-Bold($fz, $lh, $fw){
+    font-family: 'Inter-Bold';
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
+@mixin Poppins($fz, $lh, $fw){
+    font-family: 'Poppins';
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+
+
+
