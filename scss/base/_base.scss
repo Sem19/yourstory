@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root{
+    ff-- 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,13 +35,14 @@ img {
     cursor: pointer;
 }
 
-input, textarea{
+input,
+textarea {
     font: inherit;
     background: transparent;
     outline: none;
     border: none;
 
-    &::placeholder{
+    &::placeholder {
         font: inherit;
         color: inherit;
     }
@@ -42,7 +51,6 @@ input, textarea{
 // main style
 
 body {
-    @include GeneralSans-Medium(16px, 1, 500);
     color: $color-primary;
     display: flex;
     flex-direction: column;
@@ -52,7 +60,7 @@ body {
     background: $bg-section;
 }
 
-main{
+main {
     flex: 1;
 }
 

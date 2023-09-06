@@ -1,11 +1,11 @@
 .header {
-    height: 88px;
-    
-    @media (max-width: 450px) {
-        height: 130px;
-    }
+
+    @media (max-width: 450px) {}
+
+    &-top {}
 
     &-fixed {
+        padding-top: 50px;
         position: fixed;
         z-index: 3;
         top: 0;
@@ -13,36 +13,23 @@
         left: 0;
         background-color: $bg-blue;
 
-        @media (max-width: 450px) {
-            padding-bottom: 50px;
-        }
+        @media (max-width: 450px) {}
     }
 
+    .logo{
+            color: $color-white;
+            text-align: center;
+            font-family: Outfit;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+    }
     &-wrapper {
-        padding: 20px 0;
         display: flex;
         justify-content: space-between;
-        align-items: center;
 
-        @media(max-width: 1220px) {
-            padding: 20px 10px;
-        }
-    }
-
-
-    &-block {
-        display: flex;
-        align-items: center;
-        gap: 32px;
-
-        @media (max-width: 450px) {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 80px;
-            width: 100%;
-            justify-content: center;
-        }
+        @media(max-width: 1220px) {}
     }
 
     &-acount {
@@ -68,24 +55,7 @@
         }
     }
 
-    .acount-link {
-        width: 83px;
-        padding: 12px 0;
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: 0.005em;
-        color: $color-secondary;
-        border: 1px solid #FFFFFF;
-        border-radius: 20px;
-        text-align: center;
-
-        &.active {
-            background: $color-ltgreen;
-            border-color: $color-ltgreen;
-            color: $color-primary;
-        }
-
-    }
+    .acount-link {}
 
     .nav {
 
@@ -121,22 +91,5 @@
         }
     }
 
-    .link {
-        line-height: 24px;
-        letter-spacing: 0.005em;
-        color: $color-secondary;
-        opacity: 0.56;
-        text-transform: capitalize;
-        transition: 0.2s ease;
-
-        @media (max-width: 980px) {
-            color: black;
-        }
-
-
-        &:hover {
-            opacity: 1;
-
-        }
-    }
+    .link {}
 }
