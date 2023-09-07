@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Poppins:wght@400;500;600;700&display=swap");
 :root {
-  ff: "Outfit", sans-serif;
-  font-family: "Poppins", sans-serif;
+  --ff-outfit: "Outfit", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
 }
 
 * {
@@ -58,6 +58,10 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   background: #F9F9FB;
+  font-family: var(--ff-poppins);
+  font-weight: 600;
+  font-style: 16px;
+  line-height: 1;
 }
 
 main {
@@ -444,11 +448,8 @@ main {
 .header .logo {
   color: #fff;
   text-align: center;
-  font-family: Outfit;
+  font-family: var(--ff-outfit);
   font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
 }
 .header-wrapper {
   display: flex;
@@ -456,7 +457,8 @@ main {
 }
 .header-acount {
   display: flex;
-  gap: 16px;
+  gap: 24px;
+  align-items: center;
 }
 .header .burger {
   display: none;
@@ -505,6 +507,27 @@ main {
     height: 100vh;
   }
 }
+.header .link {
+  color: #fff;
+  text-align: center;
+  font-family: var(--ff-outfit);
+  font-size: 22px;
+}
+.header .acount-link.login {
+  width: 30px;
+  height: 30px;
+  background: url(../img/log-in.svg);
+}
+.header .acount-link.active.Sign-Up {
+  border-radius: 20px;
+  background: #FF1DA3;
+  padding: 8px 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
 .footer {
   background: #08172D;
 }

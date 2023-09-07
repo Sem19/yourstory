@@ -16,15 +16,13 @@
         @media (max-width: 450px) {}
     }
 
-    .logo{
-            color: $color-white;
-            text-align: center;
-            font-family: Outfit;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
+    .logo {
+        color: $color-white;
+        text-align: center;
+        font-family: var(--ff-outfit);
+        font-size: 22px;
     }
+
     &-wrapper {
         display: flex;
         justify-content: space-between;
@@ -34,7 +32,8 @@
 
     &-acount {
         display: flex;
-        gap: 16px;
+        gap: 24px;
+        align-items: center;
     }
 
     .burger {
@@ -91,5 +90,26 @@
         }
     }
 
-    .link {}
+    .link {
+        color: $color-white;
+        text-align: center;
+        font-family: var(--ff-outfit);
+        font-size: 22px;
+    }
+
+    .acount-link.login {
+        width: 30px;
+        height: 30px;
+        background: url(../img/log-in.svg);
+    }
+
+    .acount-link.active.Sign-Up {
+        border-radius: 20px;
+        background: #FF1DA3;
+        padding: 8px 30px;
+        color: $color-white;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+    }
 }

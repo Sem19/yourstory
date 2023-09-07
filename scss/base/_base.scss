@@ -4,8 +4,7 @@
 :root{
     --ff-outfit: 'Outfit', sans-serif;
     --ff-poppins: 'Poppins', sans-serif;
-    --mt: 200px;
-    --padding: 10px;
+    
 }
 
 * {
@@ -60,8 +59,10 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     background: $bg-section;
-    margin-top: var(--mt);
-    padding: var(--padding);
+    font-family: var(--ff-poppins);
+    font-weight: 600;
+    font-style: 16px;
+    line-height: 1;
 }
 
 main {
