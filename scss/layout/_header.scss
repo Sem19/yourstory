@@ -1,8 +1,12 @@
 .header {
+    background: url(../img/herobg.jpg) no-repeat;
+    background-size: cover;
 
     @media (max-width: 450px) {}
 
-    &-top {}
+    &-top {
+        height: 81px;
+    }
 
     &-fixed {
         padding-top: 50px;
@@ -11,7 +15,6 @@
         top: 0;
         right: 0;
         left: 0;
-        background-color: $bg-blue;
 
         @media (max-width: 450px) {}
     }
