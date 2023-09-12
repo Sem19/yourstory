@@ -1,11 +1,5 @@
 .hero {
     
-
-    &-link {
-        display: flex;
-        gap: 20px;
-    }
-
     &-wrapper{
         display: flex;
         justify-content: center;
@@ -16,6 +10,44 @@
     &-content {
         max-width: 613px;
         width: 100%;
+    }
+
+    &-title {
+        color: $color-white;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 93px;
+        margin-bottom: 33px;
+    }
+
+    &-text {
+        color: $color-white;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 35px;
+        margin-bottom: 55px;
+    }
+
+    &-link {
+        display: flex;
+        gap: 20px;
+        color: $color-white;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    a.left {
+        border-radius: 20px;
+        border: 2px solid $color-white;
+        padding: 8px 40px;
+        
+    }
+
+    a.right {
+        border-radius: 20px;
+        background: #FF1DA3;
+        padding: 8px 30px 8px 40px;
     }
 
     &-img {

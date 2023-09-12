@@ -182,10 +182,6 @@ main {
   display: none;
 }
 
-.hero-link {
-  display: flex;
-  gap: 20px;
-}
 .hero-wrapper {
   display: flex;
   justify-content: center;
@@ -195,6 +191,38 @@ main {
 .hero-content {
   max-width: 613px;
   width: 100%;
+}
+.hero-title {
+  color: #fff;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 93px;
+  margin-bottom: 33px;
+}
+.hero-text {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+  margin-bottom: 55px;
+}
+.hero-link {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+.hero a.left {
+  border-radius: 20px;
+  border: 2px solid #fff;
+  padding: 8px 40px;
+}
+.hero a.right {
+  border-radius: 20px;
+  background: #FF1DA3;
+  padding: 8px 30px 8px 40px;
 }
 .hero-img {
   max-width: 928px;
