@@ -223,6 +223,9 @@ main {
   border-radius: 20px;
   background: #FF1DA3;
   padding: 8px 30px 8px 40px;
+  background-image: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-position: left 20px center;
 }
 .hero-img {
   max-width: 928px;
