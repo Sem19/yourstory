@@ -1,15 +1,24 @@
 .hero {
-    
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+
+    &-container{
+        max-width: 1415px;
+        width: 100%;
+        margin-left: auto;
+    }
+
     &-wrapper{
         display: flex;
         justify-content: center;
         gap: 27px;
-        align-items: center;
     }
 
     &-content {
         max-width: 613px;
         width: 100%;
+        padding: 153px 0 160px;
     }
 
     &-title {
@@ -37,7 +46,7 @@
         font-weight: 700;
     }
 
-    a.left {
+    .left {
         border-radius: 20px;
         border: 2px solid $color-white;
         padding: 8px 40px;
@@ -45,17 +54,24 @@
         
     }
 
-    a.right {
+    .right {
         border-radius: 20px;
         background: #FF1DA3;
         padding: 8px 30px 8px 40px;
         background-image: url(../img/play.svg);
         background-repeat: no-repeat;
         background-position: left 20px center;
+        display: flex;
+        align-items: center;
+        text-align: right;
     }
 
     &-img {
         max-width: 928px;
         width: 100%;
+
+        img{
+            height: 100%;
+        }
     }
 }
