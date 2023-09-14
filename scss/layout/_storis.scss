@@ -1,0 +1,21 @@
+.storis {
+
+    &-wrapper {
+        max-width: 1495px;
+        width: 100%;
+        margin-left: auto;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    &-title {
+        margin-top: 126px;
+    }
+
+    &-hero {
+        max-width: 772px;
+        width: 100%;
+        background: url(../img/storibg.png) no-repeat center;
+    }
+}

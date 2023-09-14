@@ -69,6 +69,19 @@ main {
     flex: 1;
 }
 
+.max-width{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.inner-title {
+    color: #192138;
+    font-size: 45px;
+    line-height: 2.0;
+}
+
 .container {
     max-width: 1207px;
     width: 100%;
