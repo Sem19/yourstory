@@ -1,5 +1,5 @@
 .storis {
-
+    background: $bg-white;
     &-wrapper {
         max-width: 1495px;
         width: 100%;
@@ -19,5 +19,20 @@
         background: url(../img/storibg.png) no-repeat center,
             url(../img/sfera.png) no-repeat right 56px top 42px;
         padding: 380px 74px 49px 323px;
+    }
+
+    li {
+        color: #192138;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 2.0;
+        cursor: pointer;
+        transition: $transition;
+        background: transparent;
+
+        &:hover{
+            padding-left: 20px;
+            background: url(../img/polygon.svg) no-repeat left center;
+        }
     }
 }
