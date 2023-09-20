@@ -7,6 +7,30 @@
         display: flex;
         align-items: flex-start;
         gap: 20px;
+        position: relative;
+    }
+
+    &-video{
+        position: absolute;
+        z-index: 2;
+        max-width: 1002px;
+        width: 100%;
+        max-height: 647px;
+        height: 100%;
+        border-radius: 30px;
+        background: url(../img/storisimg.jpg) no-repeat center;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-btn{
+        width: 178px;
+        height: 178px;
+        background: url(../img/play.png) no-repeat center;
+
     }
 
     &-title {
@@ -19,6 +43,7 @@
         background: url(../img/storibg.png) no-repeat center,
             url(../img/sfera.png) no-repeat right 56px top 42px;
         padding: 380px 74px 49px 323px;
+        margin-bottom: 175px;
     }
 
     li {
@@ -34,5 +59,12 @@
             padding-left: 20px;
             background: url(../img/polygon.svg) no-repeat left center;
         }
+    }
+
+    .slider-wrapper {
+        height: 189px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
     }
 }
