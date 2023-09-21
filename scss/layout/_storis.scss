@@ -1,5 +1,6 @@
 .storis {
     background: $bg-white;
+
     &-wrapper {
         max-width: 1495px;
         width: 100%;
@@ -10,7 +11,7 @@
         position: relative;
     }
 
-    &-video{
+    &-video {
         position: absolute;
         z-index: 2;
         max-width: 1002px;
@@ -18,19 +19,59 @@
         max-height: 647px;
         height: 100%;
         border-radius: 30px;
-        background: url(../img/storisimg.jpg) no-repeat center;
         bottom: 0;
         left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
+
+
+        .video {
+            position: relative;
+
+            &.hide {
+                &::after {
+                    opacity: 0;
+                    z-index: -1;
+                }
+            }
+
+            &::after {
+                content: '';
+                background: url(../img/storisimg.jpg) no-repeat center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+                border-radius: 30px;
+                transition: $transition;
+            }
+        }
+
+        .product-video {
+            max-width: 1002px;
+            width: 100%;
+            border-radius: 30px;
+        }
     }
 
-    .video-btn{
+    .video-btn {
         width: 178px;
         height: 178px;
         background: url(../img/play.png) no-repeat center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+        transform: translate(-50%, -50%);
+        transition: $transition;
 
+        &.hide{
+            opacity: 0;
+            z-index: -1;
+        }
     }
 
     &-title {
@@ -55,7 +96,7 @@
         transition: $transition;
         background: transparent;
 
-        &:hover{
+        &:hover {
             padding-left: 20px;
             background: url(../img/polygon.svg) no-repeat left center;
         }
