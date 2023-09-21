@@ -25,7 +25,7 @@ $(document).ready(function () {
     
 });
 
-const button = document.querySelector('.video-control')
+const button = document.querySelector('.video-btn')
 const videoPlay = document.querySelector('#video')
 const video = document.querySelector('.video')
 
