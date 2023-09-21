@@ -25,15 +25,6 @@ $(document).ready(function () {
     
 });
 
-// const togglepassword = document.querySelector('#togglepassword')
-// const password = document.querySelector('#password')
-
-// togglepassword.addEventListener('click', function (e) {
-//     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-//     this.classList.toggle('eye-close');
-//     password.setAttribute('type', type);
-// })
-
 const button = document.querySelector('.video-control')
 const videoPlay = document.querySelector('#video')
 const video = document.querySelector('.video')
